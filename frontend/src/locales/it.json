@@ -2519,5 +2519,27 @@
     "adminEnable": "Consenti webhook di notifica agli utenti",
     "origins": "Origini private consentite (una per riga)",
     "originsHelp": "Inserisci origini esatte con protocollo, host e porta, senza percorso. Gli endpoint pubblici richiedono HTTPS. Le destinazioni private consentite possono usare HTTP; gli indirizzi di loopback, link-local e riservati restano bloccati."
+  },
+  "gmailLabels": {
+    "title": "Etichette di Gmail",
+    "description": "Mostra le etichette di Gmail nell’intestazione del messaggio e permette di crearle, modificarle, applicarle ed eliminarle.",
+    "account": "Account",
+    "newLabel": "Nome della nuova etichetta",
+    "create": "Crea",
+    "created": "Etichetta «{{name}}» creata",
+    "createFailed": "Impossibile creare l’etichetta.",
+    "delete": "Elimina",
+    "deleteWithMessages": "L’etichetta «{{name}}» contiene {{count}} messaggi. Verrà eliminata in Gmail: i messaggi restano in Gmail (Tutti i messaggi), ma quelli che erano solo in questa etichetta non appariranno più in MailFlow. Continuare?",
+    "deleteEmpty": "Eliminare l’etichetta «{{name}}»?",
+    "deleteFailed": "Impossibile eliminare l’etichetta.",
+    "color": "Colore",
+    "empty": "Ancora nessuna etichetta.",
+    "count": "{{count}} messaggi",
+    "add": "Etichette",
+    "applyFailed": "Impossibile modificare l’etichetta. Riprova.",
+    "noAccounts": "Nessun account supporta le etichette. Funziona solo dove un’etichetta è una cartella (Gmail).",
+    "edit": "Modifica",
+    "editFailed": "Impossibile salvare la modifica.",
+    "removeLastCopy": "«{{name}}» è l’unica cartella di questo messaggio. Rimuovendo l’etichetta non sarà più visibile in MailFlow (resta in «Tutti i messaggi» di Gmail). Continuare?"
   }
 }

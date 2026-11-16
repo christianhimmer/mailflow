@@ -2519,5 +2519,27 @@
     "adminEnable": "사용자의 알림 웹훅 허용",
     "origins": "허용된 사설 출처 (줄당 하나)",
     "originsHelp": "경로 없이 프로토콜, 호스트, 포트를 포함한 정확한 출처를 입력하세요. 공개 엔드포인트는 HTTPS가 필요합니다. 허용된 사설 대상은 HTTP를 사용할 수 있지만 루프백, 링크 로컬 및 예약 주소는 계속 차단됩니다."
+  },
+  "gmailLabels": {
+    "title": "Gmail 라벨",
+    "description": "메시지 헤더에 Gmail 라벨을 표시하고 만들기, 이름 수정, 적용, 삭제를 할 수 있습니다.",
+    "account": "계정",
+    "newLabel": "새 라벨 이름",
+    "create": "만들기",
+    "created": "‘{{name}}’ 라벨을 만들었습니다",
+    "createFailed": "라벨을 만들지 못했습니다.",
+    "delete": "삭제",
+    "deleteWithMessages": "‘{{name}}’ 라벨에 메시지 {{count}}개가 있습니다. Gmail에서 라벨이 삭제됩니다. 메시지는 Gmail(모든 메일)에 남지만, 이 라벨에만 있던 메시지는 MailFlow에 더 이상 표시되지 않습니다. 계속할까요?",
+    "deleteEmpty": "‘{{name}}’ 라벨을 삭제할까요?",
+    "deleteFailed": "라벨을 삭제하지 못했습니다.",
+    "color": "색상",
+    "empty": "아직 라벨이 없습니다.",
+    "count": "메시지 {{count}}개",
+    "add": "라벨",
+    "applyFailed": "라벨을 변경하지 못했습니다. 다시 시도하세요.",
+    "noAccounts": "라벨을 지원하는 계정이 없습니다. 라벨이 폴더인 계정(Gmail)에서만 작동합니다.",
+    "edit": "수정",
+    "editFailed": "변경 내용을 저장하지 못했습니다.",
+    "removeLastCopy": "‘{{name}}’은(는) 이 메시지가 있는 유일한 폴더입니다. 라벨을 제거하면 MailFlow에 더 이상 표시되지 않습니다(Gmail의 ‘모든 메일’에는 남습니다). 계속할까요?"
   }
 }

@@ -2538,5 +2538,27 @@
     "adminEnable": "Povolit uživatelům webhooky oznámení",
     "origins": "Povolené soukromé zdroje (jeden na řádek)",
     "originsHelp": "Zadejte přesné zdroje včetně protokolu, hostitele a portu, bez cesty. Veřejné cíle vyžadují HTTPS. Povolené soukromé cíle mohou používat HTTP; adresy zpětné smyčky, link-local a vyhrazené adresy zůstávají blokované."
+  },
+  "gmailLabels": {
+    "title": "Štítky Gmailu",
+    "description": "Zobrazuje štítky Gmailu v záhlaví zprávy a umožňuje je vytvářet, upravovat, přiřazovat a mazat.",
+    "account": "Účet",
+    "newLabel": "Název nového štítku",
+    "create": "Vytvořit",
+    "created": "Štítek „{{name}}“ vytvořen",
+    "createFailed": "Štítek se nepodařilo vytvořit.",
+    "delete": "Smazat",
+    "deleteWithMessages": "Štítek „{{name}}“ má {{count}} zpráv. V Gmailu bude smazán: zprávy zůstanou v Gmailu (Vše), ale ty, které byly jen v tomto štítku, v MailFlow zmizí. Pokračovat?",
+    "deleteEmpty": "Smazat štítek „{{name}}“?",
+    "deleteFailed": "Štítek se nepodařilo smazat.",
+    "color": "Barva",
+    "empty": "Zatím žádné štítky.",
+    "count": "{{count}} zpráv",
+    "add": "Štítky",
+    "applyFailed": "Štítek se nepodařilo změnit. Zkuste to znovu.",
+    "noAccounts": "Žádný účet nepodporuje štítky. Funguje jen tam, kde je štítek složka (Gmail).",
+    "edit": "Upravit",
+    "editFailed": "Změnu se nepodařilo uložit.",
+    "removeLastCopy": "„{{name}}“ je jediná složka této zprávy. Po odebrání štítku se v MailFlow přestane zobrazovat (v Gmailu zůstane ve „Vše“). Pokračovat?"
   }
 }

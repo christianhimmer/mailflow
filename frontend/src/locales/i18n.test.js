@@ -614,6 +614,15 @@ const SAME_VALUE_ALLOWED = {
   'admin.apiTokens.title':     [['es', 'ptBR'], ['cs', 'pl']],
   'admin.apiTokens.nameLabel': [['it', 'ptBR']],
   'admin.apiTokens.copied':    [['es', 'ptBR']],
+
+  // ── Gmail labels plugin ───────────────────────────────────────────────────
+  // The word for "account" is the same in German/Polish and English/Italian; "Labels" is the word
+  // in both German and English; "Etiquetas"/"Editar" coincide in Spanish and Portuguese, and
+  // French uses the same "{{count}} messages" as English.
+  'gmailLabels.account': [['de', 'pl'], ['en', 'it']],
+  'gmailLabels.add':     [['de', 'en'], ['es', 'ptBR']],
+  'gmailLabels.count':   [['en', 'fr']],
+  'gmailLabels.edit':    [['es', 'ptBR']],
 };
 
 // Locale-specific plural forms are allowed per locale. A locale may add forms

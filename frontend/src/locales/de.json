@@ -2519,5 +2519,27 @@
     "adminEnable": "Benachrichtigungs-Webhooks für Benutzer erlauben",
     "origins": "Erlaubte private Ursprünge (einer pro Zeile)",
     "originsHelp": "Exakte Ursprünge mit Protokoll, Host und Port ohne Pfad eingeben. Öffentliche Endpunkte benötigen HTTPS. Erlaubte private Ziele dürfen HTTP verwenden; Loopback-, Link-Local- und reservierte Adressen bleiben gesperrt."
+  },
+  "gmailLabels": {
+    "title": "Gmail-Labels",
+    "description": "Zeigt die Gmail-Labels im Kopf der Nachricht und erlaubt Anlegen, Bearbeiten, Zuweisen und Löschen.",
+    "account": "Konto",
+    "newLabel": "Name des neuen Labels",
+    "create": "Anlegen",
+    "created": "Label „{{name}}“ angelegt",
+    "createFailed": "Das Label konnte nicht angelegt werden.",
+    "delete": "Löschen",
+    "deleteWithMessages": "Das Label „{{name}}“ enthält {{count}} Nachrichten. Es wird in Gmail gelöscht: Die Nachrichten bleiben in Gmail (Alle Nachrichten), aber solche, die nur in diesem Label lagen, erscheinen nicht mehr in MailFlow. Fortfahren?",
+    "deleteEmpty": "Label „{{name}}“ löschen?",
+    "deleteFailed": "Das Label konnte nicht gelöscht werden.",
+    "color": "Farbe",
+    "empty": "Noch keine Labels.",
+    "count": "{{count}} Nachrichten",
+    "add": "Labels",
+    "applyFailed": "Das Label konnte nicht geändert werden. Bitte erneut versuchen.",
+    "noAccounts": "Kein Konto unterstützt Labels. Es funktioniert nur bei Konten, in denen ein Label ein Ordner ist (Gmail).",
+    "edit": "Bearbeiten",
+    "editFailed": "Die Änderung konnte nicht gespeichert werden.",
+    "removeLastCopy": "„{{name}}“ ist der einzige Ordner dieser Nachricht. Wenn Sie das Label entfernen, wird sie in MailFlow nicht mehr angezeigt (in Gmail bleibt sie unter „Alle Nachrichten“). Fortfahren?"
   }
 }

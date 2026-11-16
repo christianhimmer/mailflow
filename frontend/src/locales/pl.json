@@ -2538,5 +2538,27 @@
     "adminEnable": "Zezwól użytkownikom na webhooki powiadomień",
     "origins": "Dozwolone prywatne źródła (jedno w wierszu)",
     "originsHelp": "Wpisz dokładne źródła z protokołem, hostem i portem, bez ścieżki. Publiczne adresy wymagają HTTPS. Dozwolone prywatne cele mogą używać HTTP; adresy pętli zwrotnej, link-local i zarezerwowane pozostają zablokowane."
+  },
+  "gmailLabels": {
+    "title": "Etykiety Gmail",
+    "description": "Pokazuje etykiety Gmail w nagłówku wiadomości i pozwala je tworzyć, edytować, przypisywać i usuwać.",
+    "account": "Konto",
+    "newLabel": "Nazwa nowej etykiety",
+    "create": "Utwórz",
+    "created": "Utworzono etykietę „{{name}}”",
+    "createFailed": "Nie udało się utworzyć etykiety.",
+    "delete": "Usuń",
+    "deleteWithMessages": "Etykieta „{{name}}” ma {{count}} wiadomości. Zostanie usunięta w Gmailu: wiadomości pozostaną w Gmailu (Wszystkie), ale te, które były tylko w tej etykiecie, znikną z MailFlow. Kontynuować?",
+    "deleteEmpty": "Usunąć etykietę „{{name}}”?",
+    "deleteFailed": "Nie udało się usunąć etykiety.",
+    "color": "Kolor",
+    "empty": "Nie ma jeszcze etykiet.",
+    "count": "{{count}} wiadomości",
+    "add": "Etykiety",
+    "applyFailed": "Nie udało się zmienić etykiety. Spróbuj ponownie.",
+    "noAccounts": "Żadne konto nie obsługuje etykiet. Działa tylko tam, gdzie etykieta jest folderem (Gmail).",
+    "edit": "Edytuj",
+    "editFailed": "Nie udało się zapisać zmiany.",
+    "removeLastCopy": "„{{name}}” to jedyny folder tej wiadomości. Usunięcie etykiety sprawi, że zniknie z MailFlow (w Gmailu pozostanie w „Wszystkich”). Kontynuować?"
   }
 }

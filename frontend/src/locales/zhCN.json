@@ -2519,5 +2519,27 @@
     "adminEnable": "允许用户使用通知 Webhook",
     "origins": "允许的私网来源（每行一个）",
     "originsHelp": "输入包含协议、主机和端口的完整来源，不包含路径。公网端点必须使用 HTTPS。允许的私网目标可使用 HTTP，但仍禁止环回、链路本地及保留地址。"
+  },
+  "gmailLabels": {
+    "title": "Gmail 标签",
+    "description": "在邮件标题栏显示 Gmail 标签，并支持创建、编辑、添加和删除。",
+    "account": "账户",
+    "newLabel": "新标签名称",
+    "create": "创建",
+    "created": "已创建标签“{{name}}”",
+    "createFailed": "无法创建标签。",
+    "delete": "删除",
+    "deleteWithMessages": "标签“{{name}}”有 {{count}} 封邮件。该标签将在 Gmail 中删除：邮件仍保留在 Gmail（所有邮件）中，但仅属于该标签的邮件将不再显示在 MailFlow。继续吗？",
+    "deleteEmpty": "删除标签“{{name}}”？",
+    "deleteFailed": "无法删除标签。",
+    "color": "颜色",
+    "empty": "还没有标签。",
+    "count": "{{count}} 封邮件",
+    "add": "标签",
+    "applyFailed": "无法更改标签，请重试。",
+    "noAccounts": "没有支持标签的账户。仅在标签即文件夹的账户（Gmail）中可用。",
+    "edit": "编辑",
+    "editFailed": "无法保存更改。",
+    "removeLastCopy": "“{{name}}”是这封邮件所在的唯一文件夹。移除标签后，它将不再显示在 MailFlow（仍保留在 Gmail 的“所有邮件”中）。继续吗？"
   }
 }

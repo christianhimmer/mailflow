@@ -2519,5 +2519,27 @@
     "adminEnable": "Permitir webhooks de notificación a los usuarios",
     "origins": "Orígenes privados permitidos (uno por línea)",
     "originsHelp": "Introduce orígenes exactos con protocolo, host y puerto, sin ruta. Los destinos públicos requieren HTTPS. Los destinos privados permitidos pueden usar HTTP; las direcciones de bucle local, enlace local y reservadas siguen bloqueadas."
+  },
+  "gmailLabels": {
+    "title": "Etiquetas de Gmail",
+    "description": "Muestra las etiquetas de Gmail en la cabecera del mensaje y permite crearlas, editarlas, aplicarlas y borrarlas.",
+    "account": "Cuenta",
+    "newLabel": "Nombre de la nueva etiqueta",
+    "create": "Crear",
+    "created": "Etiqueta «{{name}}» creada",
+    "createFailed": "No se pudo crear la etiqueta.",
+    "delete": "Borrar",
+    "deleteWithMessages": "La etiqueta «{{name}}» tiene {{count}} correos. Se borrará la etiqueta en Gmail: los correos siguen en Gmail (Todos), pero los que solo estaban en esta etiqueta dejarán de verse en MailFlow. ¿Continuar?",
+    "deleteEmpty": "¿Borrar la etiqueta «{{name}}»?",
+    "deleteFailed": "No se pudo borrar la etiqueta.",
+    "color": "Color",
+    "empty": "Todavía no hay etiquetas.",
+    "count": "{{count}} correos",
+    "add": "Etiquetas",
+    "applyFailed": "No se pudo cambiar la etiqueta. Inténtalo de nuevo.",
+    "noAccounts": "Ninguna cuenta admite etiquetas. Solo funciona en cuentas donde una etiqueta es una carpeta (Gmail).",
+    "edit": "Editar",
+    "editFailed": "No se pudo guardar el cambio.",
+    "removeLastCopy": "«{{name}}» es la única carpeta donde está este correo. Si le quitas la etiqueta, dejará de verse en MailFlow (en Gmail seguirá en «Todos»). ¿Continuar?"
   }
 }

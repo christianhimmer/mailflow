@@ -683,6 +683,17 @@ export const api = {
   gtdDone: (id, states) => request('POST', '/gtd/done', { id, states }),
   gtdEnsureFolders: (accountId, folders) => request('POST', '/gtd/folders/ensure', { accountId, folders }),
 
+  // Gmail labels (plugin) — which label folders each message row currently sits in, applying and
+  // removing a label, and the per-account label colours. Gmail exposes a label as a folder, and
+  // MailFlow already syncs those copies; a colour has no IMAP representation and is stored locally.
+  gmailLabelAccounts: () => request('GET', '/gmail-labels/accounts'),
+  gmailLabelMembership: (groups) => request('POST', '/gmail-labels/membership', { groups }),
+  gmailLabelApply: (messageId, folder) => request('POST', '/gmail-labels/apply', { messageId, folder }),
+  gmailLabelRemove: (messageId, folder, force = false) => request('POST', '/gmail-labels/remove', { messageId, folder, force }),
+  gmailLabelColors: (accountId) => request('GET', `/gmail-labels/colors?accountId=${encodeURIComponent(accountId)}`),
+  gmailLabelSetColor: (accountId, label, color) => request('PUT', '/gmail-labels/colors', { accountId, label, color }),
+  gmailLabelForgetColor: (accountId, label) => request('DELETE', `/gmail-labels/colors?accountId=${encodeURIComponent(accountId)}&label=${encodeURIComponent(label)}`),
+
   // Tags: definitions, and the tags on messages.
   tagDefinitions: () => request('GET', '/tags/definitions'),
   tagCreate: (body) => request('POST', '/tags/definitions', body),

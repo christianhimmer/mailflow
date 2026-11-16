@@ -2519,5 +2519,27 @@
     "adminEnable": "Permitir webhooks de notificação para usuários",
     "origins": "Origens privadas permitidas (uma por linha)",
     "originsHelp": "Informe origens exatas com protocolo, host e porta, sem caminho. Destinos públicos exigem HTTPS. Destinos privados permitidos podem usar HTTP; endereços de loopback, link-local e reservados continuam bloqueados."
+  },
+  "gmailLabels": {
+    "title": "Etiquetas do Gmail",
+    "description": "Mostra as etiquetas do Gmail no cabeçalho da mensagem e permite criá-las, editá-las, aplicá-las e excluí-las.",
+    "account": "Conta",
+    "newLabel": "Nome da nova etiqueta",
+    "create": "Criar",
+    "created": "Etiqueta “{{name}}” criada",
+    "createFailed": "Não foi possível criar a etiqueta.",
+    "delete": "Excluir",
+    "deleteWithMessages": "A etiqueta “{{name}}” tem {{count}} mensagens. Ela será excluída no Gmail: as mensagens continuam no Gmail (Todos), mas as que estavam só nesta etiqueta deixarão de aparecer no MailFlow. Continuar?",
+    "deleteEmpty": "Excluir a etiqueta “{{name}}”?",
+    "deleteFailed": "Não foi possível excluir a etiqueta.",
+    "color": "Cor",
+    "empty": "Ainda não há etiquetas.",
+    "count": "{{count}} mensagens",
+    "add": "Etiquetas",
+    "applyFailed": "Não foi possível alterar a etiqueta. Tente novamente.",
+    "noAccounts": "Nenhuma conta aceita etiquetas. Só funciona em contas onde uma etiqueta é uma pasta (Gmail).",
+    "edit": "Editar",
+    "editFailed": "Não foi possível salvar a alteração.",
+    "removeLastCopy": "“{{name}}” é a única pasta desta mensagem. Ao remover a etiqueta, ela deixará de aparecer no MailFlow (continua no Gmail, em “Todos”). Continuar?"
   }
 }

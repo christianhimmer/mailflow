@@ -2519,5 +2519,27 @@
     "adminEnable": "Autoriser les webhooks de notification pour les utilisateurs",
     "origins": "Origines privées autorisées (une par ligne)",
     "originsHelp": "Saisissez les origines exactes avec protocole, hôte et port, sans chemin. Les destinations publiques exigent HTTPS. Les destinations privées autorisées peuvent utiliser HTTP ; les adresses de boucle locale, de liaison locale et réservées restent bloquées."
+  },
+  "gmailLabels": {
+    "title": "Étiquettes Gmail",
+    "description": "Affiche les étiquettes Gmail dans l’en-tête du message et permet de les créer, modifier, appliquer et supprimer.",
+    "account": "Compte",
+    "newLabel": "Nom de la nouvelle étiquette",
+    "create": "Créer",
+    "created": "Étiquette « {{name}} » créée",
+    "createFailed": "Impossible de créer l’étiquette.",
+    "delete": "Supprimer",
+    "deleteWithMessages": "L’étiquette « {{name}} » contient {{count}} messages. Elle sera supprimée dans Gmail : les messages restent dans Gmail (Tous les messages), mais ceux qui n’étaient que dans cette étiquette n’apparaîtront plus dans MailFlow. Continuer ?",
+    "deleteEmpty": "Supprimer l’étiquette « {{name}} » ?",
+    "deleteFailed": "Impossible de supprimer l’étiquette.",
+    "color": "Couleur",
+    "empty": "Aucune étiquette pour l’instant.",
+    "count": "{{count}} messages",
+    "add": "Étiquettes",
+    "applyFailed": "Impossible de modifier l’étiquette. Réessayez.",
+    "noAccounts": "Aucun compte ne prend en charge les étiquettes. Cela ne fonctionne que là où une étiquette est un dossier (Gmail).",
+    "edit": "Modifier",
+    "editFailed": "Impossible d’enregistrer la modification.",
+    "removeLastCopy": "« {{name}} » est le seul dossier de ce message. Si vous retirez l’étiquette, il n’apparaîtra plus dans MailFlow (il reste dans « Tous les messages » de Gmail). Continuer ?"
   }
 }
