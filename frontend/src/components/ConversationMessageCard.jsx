@@ -21,6 +21,7 @@ import { bodyCache } from '../utils/bodyCache.js';
 import { useMobile } from '../hooks/useMobile.js';
 import MessageHeaderModal from './MessageHeaderModal.jsx';
 import TodoistTaskModal from './TodoistTaskModal.jsx';
+import { PluginSlot, usePluginSlot } from '../plugins/PluginSlot.jsx';
 import {
   ActionBtn, MessageTools, ReplySplitButton, RemoteImagesNotice, UnsubscribeNotice,
   AiReplyIcon, ForwardIcon, TodoistIcon, ReadStateIcon, HeadersIcon, DownloadIcon, PrintIcon, DarkToggleIcon, StarIcon,
@@ -49,6 +50,10 @@ export default function ConversationMessageCard({ message, expanded, onToggle, o
   const todoistConnected = useStore(s => s.todoistConnected);
   const addToImageWhitelist = useStore(s => s.addToImageWhitelist);
   const isMobile = useMobile();
+  // Plugin seam for per-message metadata (e.g. Gmail labels). A conversation card has no recipients
+  // line, so the pills sit under the message's own action bar when it is expanded.
+  const account = accounts.find(a => a.id === message.account_id);
+  const recipientMeta = usePluginSlot('message-recipient-meta', { message, account });
   const [showHeaderModal, setShowHeaderModal] = useState(false);
   const [showTodoistModal, setShowTodoistModal] = useState(false);
   const [savingAllow, setSavingAllow] = useState(false);
@@ -366,6 +371,9 @@ export default function ConversationMessageCard({ message, expanded, onToggle, o
               <StarIcon filled={message.is_starred} />
             </ActionBtn>
           </div>
+          {recipientMeta.length > 0 && (
+            <PluginSlot name="message-recipient-meta" ctx={{ message, account }} />
+          )}
           {loading && (
             <div style={{ padding: '12px 0', display: 'flex', flexDirection: 'column', gap: 8 }}>
               <div className="skeleton-line" style={{ height: 13, width: '62%', borderRadius: 4 }} />

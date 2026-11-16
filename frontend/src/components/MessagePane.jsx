@@ -27,7 +27,7 @@ import MessageBodyView from './MessageBodyView.jsx';
 import { copyToClipboard } from '../utils/clipboard.js';
 import { saveSenderCategory } from '../utils/senderCategory.js';
 import { buildMovePickerSections, movePickerSectionHeading, movePickerFoldersEmpty, runMovePickerAction } from '../utils/folderDisplay.js';
-import { PluginSlot, usePluginCollected } from '../plugins/PluginSlot.jsx';
+import { PluginSlot, usePluginCollected, usePluginSlot } from '../plugins/PluginSlot.jsx';
 import FolderPathLabel from './FolderPathLabel.jsx';
 import SpamBadge from './SpamBadge.jsx';
 import SpamExplainModal from './SpamExplainModal.jsx';
@@ -158,6 +158,9 @@ export default function MessagePane({ windowMessageId = null, onWindowClose = nu
   // Antispam (v0.1) — toolbar visibility for the spam / ham buttons.
   // Mirrors the heuristic in ContextMenu.jsx so the toolbar matches the menu.
   const account = accounts.find(a => a.id === message?.account_id);
+  // Plugin seam under the recipients line (e.g. Gmail labels). Checked here so an inactive or empty
+  // slot does not add a blank row to every message.
+  const recipientMeta = usePluginSlot('message-recipient-meta', { message, account });
   const accountFolders = useStore(s => s.folders[message?.account_id] || []);
   // Dark email bodies (#228): the setting, and each message's own choice made with the toggle.
   const theme = useStore(s => s.theme);
@@ -1758,6 +1761,11 @@ export default function MessagePane({ windowMessageId = null, onWindowClose = nu
             </div>
           </div>
 
+          {recipientMeta.length > 0 && (
+            <div style={{ padding: '0 16px' }}>
+              <PluginSlot name="message-recipient-meta" ctx={{ message, account }} />
+            </div>
+          )}
         </div>
 
         {/* Attachments */}

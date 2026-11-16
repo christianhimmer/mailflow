@@ -114,6 +114,9 @@ Core carries no plugin-specific UI code. A plugin registers into a small in-proc
 
 - `registerSlot(name, { pluginId, isActive?, render })` — render UI at a core seam (`right-sidebar`,
   `settings-categories`, `row-hover-action`, …). Rendered with `<PluginSlot>` / `usePluginSlot`.
+  `message-recipient-meta` (`ctx: { message, account }`) sits under the recipients line of the open
+  message and under each message's action bar in a conversation; it is the seam for per-message
+  metadata that is not a badge on the subject, and the surface must render nothing when empty.
 - `registerCollector(name, { pluginId, build })` — contribute descriptor arrays core renders with its
   own chrome (e.g. context-menu items). Read with `usePluginCollected`.
 - `registerRuntime({ pluginId, component })` — a headless component (renders null) that runs
